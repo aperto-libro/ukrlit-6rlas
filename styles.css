@@ -1,0 +1,60 @@
+a {
+    text-decoration: none;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    height: 33px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+li:nth-child(odd) {
+    background-color: rgb(185, 185, 185);
+    background: linear-gradient(90deg, rgba(185, 185, 185, 1) 0%, rgba(231, 231, 231, 1) 100%);
+}
+
+li:nth-child(2n) {
+    background-color: rgb(231, 231, 231);
+    background: linear-gradient(90deg, rgba(231, 231, 231, 1) 0%, rgba(185, 185, 185, 1) 100%);
+}
+
+.btn-read {
+    margin-right: 20px;
+    display: inline-block;
+    border: 1px solid rgb(8, 8, 8);
+    border-radius: 0 15px 15px 0;
+    width: max-content;
+    padding: 5px 20px;
+    background-color: rgb(228, 207, 22);
+    color: rgb(4, 49, 247);
+    transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn-read:hover,
+.btn-download:hover {
+    background-color: rgb(4, 49, 247);
+    color: rgb(228, 207, 22);
+}
+
+.btn-download {
+    /* align-self: flex-end; */
+    display: inline-block;
+    border: 1px solid rgb(8, 8, 8);
+    border-radius: 15px 0 0 15px;
+    width: max-content;
+    padding: 5px 20px;
+    background-color: rgb(111, 202, 238);
+    color: rgb(146, 59, 1);
+    transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.copyright {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(243, 255, 0, 1) 0%, rgba(0, 201, 255, 1) 100%);
+}
